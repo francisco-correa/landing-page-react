@@ -11,20 +11,20 @@ function App() {
   <nav className="navbar navbar-expand-md navbar-light bg-dark">
     <div className="container-fluid">
       <div className="row">
-        <div className="col-8">
+        <div className="col-md-8">
           <a className="navbar-brand text-white" href="#">Start Bootstrap</a>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+           aria-expanded="false" aria-label="Toggle navigation">
             <span clasName="navbar-toggler-icon"></span>
           </button>
         </div>
-      </div>
-        <div className="col-4"> 
-        <nav class="bg-dark navbar-dark navbar-expand-lg navbar">
-        <button type="button" data-target="#collapseNavbar" data-toggle="collapse" class="navbar-toggler">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        </div>
+        <div className="col-md-4"> 
+          <button type="button" data-target="#collapseNavbar" data-toggle="collapse" class="navbar-toggler">
+            <span class="navbar-toggler-icon"></span>
+          </button>
           <div className="navbar-collapse collapse" id="collapseNavbar">
-            <ul className="navbar-nav">
+            <ul className="navbar-nav ml-auto">
               <li className="nav-item">
                 <a className="nav-link text-white" href="">Home</a>
               </li>
@@ -39,8 +39,7 @@ function App() {
               </li> 
             </ul>
           </div>
-          </nav>
-        </div>
+      </div>
     </div>
   </nav>
 <br></br>
