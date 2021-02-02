@@ -39,7 +39,7 @@ function App() {
 <br></br>
   <div className="jumbotron">
     <h1 className="display-4">A Warm Welcome!</h1>
-    <p className="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+    <p className="lead">Et tortor at risus viverra adipiscing at in tellus integer feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit amet porttitor eget dolor morbi non arcu risus quis varius quam quisque id diam vel</p>
     <a className="btn btn-primary btn-lg" href="#" role="button">Call to action!</a>
   </div>
   
@@ -62,7 +62,7 @@ function App() {
   <br></br>
   <footer className="bg-light text-center text-lg-start">
     <div className="text-center p-4" style={{backgroundColor: "rgba(1, 24, 19, 0.85)"}}>
-      <a className="text-light" href="https://github.com/francisco-correa">Copyright © your website 2008</a>
+      <a className="text-light" href="https://github.com/francisco-correa">Copyright © Your website 2021</a>
     </div>
   </footer>
 </div>  

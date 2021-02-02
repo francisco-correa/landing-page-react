@@ -5,11 +5,12 @@ class CardOne extends React.Component {
       let card = {
         cardTitle: "Pizza Time",
         image: "https://th.bing.com/th/id/OIP.yyuhZCSa_O8zwT9eVdSfBQHaEy?w=285&h=183&c=7&o=5&dpr=1.25&pid=1.7",
-        text: "Ven por la tuya",
+        text: "Felis eget nunc lobortis mattis aliquam faucibus purus in massa",
         cta: "Find Out More!"
+
       };
       return (
-        <div className="card" style={{width: "20rem"}}>
+        <div className="card" style={{width: "20.313rem"}}>
           <img src={card.image} class="card-img-top" alt="React Logo"/>
             <div className="card-body">
               <h5 className="card-title text-center">{card.cardTitle}</h5>
