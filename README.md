@@ -1,2 +1,4 @@
 # landing-page-react
-Landing APge
+Landing Page
+
+![langing-page](https://i.imgur.com/YSL9H3i.gif)
