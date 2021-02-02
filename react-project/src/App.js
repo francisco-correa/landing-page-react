@@ -1,25 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
 import "bootstrap/dist/css/bootstrap.css";
-const Contenido = (props) => {
-  return <span style={{fontSize:24}}>{props.texto}</span>
-}
+import "jquery"
+import "popper.js"
+import CardOne from "./components/CardOne";
+import CardTwo from './components/CardTwo';
 
 function App() {
   return (
 <div className="container-fluid">
   <nav className="navbar navbar-expand-md navbar-light bg-dark">
     <div className="container-fluid">
-      <div className="row">
-        <div className="col-md-8">
           <a className="navbar-brand text-white" href="#">Start Bootstrap</a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
            aria-expanded="false" aria-label="Toggle navigation">
             <span clasName="navbar-toggler-icon"></span>
           </button>
-        </div>
-        </div>
-        <div className="col-md-4"> 
           <button type="button" data-target="#collapseNavbar" data-toggle="collapse" class="navbar-toggler">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -39,7 +34,6 @@ function App() {
               </li> 
             </ul>
           </div>
-      </div>
     </div>
   </nav>
 <br></br>
@@ -52,56 +46,16 @@ function App() {
   <div className="container-fluid">
     <div className="row">
       <div className="col-md-3">
-        <div className="card" style={{width: "20rem"}}>
-          <img src={logo} class="card-img-top" alt="React Logo"/>
-            <div className="card-body">
-              <h5 className="card-title text-center">Card title</h5>
-              <p className="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-              <hr class="my-4"></hr>
-                <div class="col text-center">
-                  <a href="#" className="btn btn-primary">Find Out More!</a>
-                </div>
-            </div>
-        </div>
+         <CardOne/>
       </div>
       <div className="col-md-3">
-        <div className="card" style={{width: "20rem"}}>
-          <img src={logo} class="card-img-top" alt="React Logo"/>
-            <div className="card-body">
-              <h5 className="card-title text-center">Card title</h5>
-              <p className="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <hr class="my-4"></hr>
-                <div class="col text-center">
-                  <a href="#" className="btn btn-primary">Find Out More!</a>
-                </div>
-            </div>
-          </div>
+         <CardTwo/>
       </div>
       <div className="col-md-3">
-        <div className="card" style={{width: "20rem"}}>
-          <img src={logo} class="card-img-top" alt="React Logo"/>
-            <div className="card-body">
-              <h5 className="card-title text-center">Card title</h5>
-              <p className="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-              <hr class="my-4"></hr>
-                <div class="col text-center">
-                  <a href="#" className="btn btn-primary">Find Out More!</a>
-                </div>
-            </div>
-        </div>
+        <CardOne/>
       </div>
       <div className="col-md-3">
-        <div className="card" style={{width: "20rem"}}>
-          <img src={logo} class="card-img-top" alt="React Logo"/>
-            <div className="card-body">
-              <h5 className="card-title text-center">Card title</h5>
-              <p className="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
-              <hr class="my-4"></hr>
-                <div class="col text-center">
-                  <a href="#" className="btn btn-primary">Find Out More!</a>
-                </div>
-            </div>
-        </div>
+        <CardTwo/>
       </div>
     </div>
   </div>
@@ -116,3 +70,7 @@ function App() {
 }
 
 export default App;
+
+
+
+
