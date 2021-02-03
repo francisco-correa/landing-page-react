@@ -1,48 +1,27 @@
 import './App.css';
 import "bootstrap/dist/css/bootstrap.css";
-import "jquery"
-import "popper.js"
+import NavBar from './components/NavBar';
+import Jumbotron from './components/Jumbotron';
 import CardOne from "./components/CardOne";
 import CardTwo from './components/CardTwo';
+import Footer from './components/Footer';
 
 function App() {
   return (
 <div className="container-fluid">
-  <nav className="navbar navbar-expand-md navbar-light bg-dark">
-    <div className="container-fluid">
-          <a className="navbar-brand text-white" href="#">Start Bootstrap</a>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
-           aria-expanded="false" aria-label="Toggle navigation">
-            <span clasName="navbar-toggler-icon"></span>
-          </button>
-          <button type="button" data-target="#collapseNavbar" data-toggle="collapse" class="navbar-toggler">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div className="navbar-collapse collapse" id="collapseNavbar">
-            <ul className="navbar-nav ml-auto">
-              <li className="nav-item">
-                <a className="nav-link text-white" href="">Home</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link text-secondary" href="">About</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link text-secondary" href="">Services</a>
-              </li> 
-              <li className="nav-item">
-                <a className="nav-link text-secondary" href="">Contact</a>
-              </li> 
-            </ul>
-          </div>
-    </div>
-  </nav>
-<br></br>
-  <div className="jumbotron">
-    <h1 className="display-4">A Warm Welcome!</h1>
-    <p className="lead">Et tortor at risus viverra adipiscing at in tellus integer feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit amet porttitor eget dolor morbi non arcu risus quis varius quam quisque id diam vel</p>
-    <a className="btn btn-primary btn-lg" href="#" role="button">Call to action!</a>
-  </div>
-  
+    <NavBar
+       brand = "Start Bootstrap"
+       link_1 = "Home"
+       link_2 = "About"
+       link_3 = "Services"
+       link_4 = "Contact"
+    />
+    <br></br>
+    <Jumbotron
+      texto = "A Warm Welcome!"
+      lorem = "Et tortor at risus viverra adipiscing at in tellus integer feugiat scelerisque varius morbi enim nunc faucibus a pellentesque sit amet porttitor eget dolor morbi non arcu risus quis varius quam quisque id diam vel"
+      cta = "Call to action!"
+         />
   <div className="container-fluid">
     <div className="row">
       <div className="col-md-3">
@@ -60,11 +39,10 @@ function App() {
     </div>
   </div>
   <br></br>
-  <footer className="bg-light text-center text-lg-start">
-    <div className="text-center p-4" style={{backgroundColor: "rgba(1, 24, 19, 0.85)"}}>
-      <a className="text-light" href="https://github.com/francisco-correa">Copyright © Your website 2021</a>
-    </div>
-  </footer>
+    <Footer
+       link = "https://github.com/francisco-correa"
+       copyright = "Copyright © Your website 2021"
+    />
 </div>  
   );
 }
